@@ -1,0 +1,50 @@
+{
+    "modelo_random_forest": {
+        "roc_auc": 0.5646723218977554,
+        "pr_auc": 0.35990538900982394,
+        "accuracy": 0.628,
+        "precision": 0.35714285714285715,
+        "recall": 0.2597402597402597,
+        "confusion_matrix": [
+            [
+                137,
+                36
+            ],
+            [
+                57,
+                20
+            ]
+        ],
+        "classification_report": "              precision    recall  f1-score   support\n\n           0       0.71      0.79      0.75       173\n           1       0.36      0.26      0.30        77\n\n    accuracy                           0.63       250\n   macro avg       0.53      0.53      0.52       250\nweighted avg       0.60      0.63      0.61       250\n"
+    },
+    "baseline_heuristico": {
+        "roc_auc": 0.5719915922228062,
+        "pr_auc": 0.3791364639020697,
+        "accuracy": 0.596,
+        "precision": 0.35714285714285715,
+        "recall": 0.38961038961038963,
+        "confusion_matrix": [
+            [
+                119,
+                54
+            ],
+            [
+                47,
+                30
+            ]
+        ]
+    },
+    "features_numericas": [
+        "valor",
+        "valor_log",
+        "dias_prazo",
+        "dias_para_vencer",
+        "taxa_atraso_fornecedor",
+        "total_of_fornecedor",
+        "valor_medio_fornecedor"
+    ],
+    "features_categoricas": [
+        "fornecedor",
+        "categoria"
+    ]
+}
